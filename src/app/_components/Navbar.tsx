@@ -48,9 +48,6 @@ export default function Navbar() {
         <button type="button" className="btn text-primary ms-3" data-bs-toggle="modal" data-bs-target="#searchModal">
           <i className="fa fa-search"></i>
         </button>
-        <a href="https://htmlcodex.com/downloading/?item=1858" className="btn btn-primary py-2 px-4 ms-3">
-          Buy Pro Version
-        </a>
       </div>
     </nav>
   );
