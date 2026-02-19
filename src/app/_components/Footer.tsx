@@ -8,9 +8,14 @@ export default function Footer() {
               <div className="bg-primary rounded p-4 h-100">
                 <div className="d-flex align-items-center mb-3">
                   <div className="bg-light rounded d-flex align-items-center justify-content-center" style={{ width: 48, height: 48 }}>
-                    <i className="fa fa-users text-primary"></i>
+                    <svg width="32" height="32" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <rect x="6" y="6" width="20" height="24" rx="6" fill="none" stroke="#0b2c3f" strokeWidth="4"></rect>
+                      <rect x="14" y="14" width="8" height="8" transform="rotate(45 18 18)" fill="#0b2c3f"></rect>
+                      <rect x="17" y="17" width="2" height="2" transform="rotate(45 18 18)" fill="#ffffff"></rect>
+                      <path d="M30 8 V28" stroke="#f26b21" strokeWidth="6" strokeLinecap="round"></path>
+                    </svg>
                   </div>
-                  <h2 className="text-white ms-3 mb-0">Startup</h2>
+                  <h2 className="text-white ms-3 mb-0">DivAxis Consultancy</h2>
                 </div>
                 <p className="text-white-50">
                   Lorem diam sit erat dolor elitr et, diam lorem justo amet clita stet eos sit. Elitr dolor duo lorem, elitr clita ipsum sea. Diam amet erat
