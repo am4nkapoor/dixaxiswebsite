@@ -1,6 +1,5 @@
 'use client';
 import { motion } from "framer-motion";
-import VendorCarouselInit from "./_components/VendorCarouselInit";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -118,10 +117,10 @@ export default function Home() {
           >
             <div className="col-lg-7">
               <div className="section-title position-relative pb-3 mb-5">
-                <h5 className="fw-bold text-primary text-uppercase" data-aos="fade-up">About Us</h5>
-                <h1 className="mb-0" data-aos="fade-up" data-aos-delay="150">The Best IT Solution With 10 Years of Experience</h1>
+                <h5 className="fw-bold text-primary text-uppercase">About Us</h5>
+                <h1 className="mb-0">The Best IT Solution With 10 Years of Experience</h1>
               </div>
-              <p className="mb-4" data-aos="fade-up" data-aos-delay="200">
+              <p className="mb-4">
                 Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore.
                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod
                 magna dolore erat amet.
@@ -203,8 +202,8 @@ export default function Home() {
                       <i className="fa fa-cubes text-white"></i>
                     </div>
                     <div className="ps-4">
-                      <h5 className="mb-3" data-aos="fade-right">Best In Industry</h5>
-                      <p className="mb-0" data-aos="fade-right" data-aos-delay="100">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                      <h5 className="mb-3">Best In Industry</h5>
+                      <p className="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
                     </div>
                   </div>
                 </div>
@@ -214,8 +213,8 @@ export default function Home() {
                       <i className="fa fa-award text-white"></i>
                     </div>
                     <div className="ps-4">
-                      <h5 className="mb-3" data-aos="fade-right">Award Winning</h5>
-                      <p className="mb-0" data-aos="fade-right" data-aos-delay="100">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                      <h5 className="mb-3">Award Winning</h5>
+                      <p className="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
                     </div>
                   </div>
                 </div>
@@ -273,10 +272,10 @@ export default function Home() {
             variants={fadeUp}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h5 className="fw-bold text-primary text-uppercase" data-aos="fade-up">Testimonial</h5>
-            <h1 className="mb-0" data-aos="fade-up" data-aos-delay="150">What Our Clients Say About Our Digital Services</h1>
+            <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
+            <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
           </motion.div>
-          <div id="home-testimonial" className="owl-carousel owl-theme testimonial-carousel">
+          <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
             <div className="testimonial-item bg-light my-4">
               <div className="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
                 <img className="img-fluid rounded" src="/img/testimonial-1.jpg" style={{ width: 80, height: 80 }} alt="" />
@@ -308,7 +307,6 @@ export default function Home() {
               <div className="pt-4 pb-5 px-5">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</div>
             </div>
           </div>
-          
         </div>
       </section>
       <section className="container-fluid py-5">
@@ -322,11 +320,11 @@ export default function Home() {
             variants={fadeUp}
             transition={{ duration: 0.6, ease: "easeOut" }}
           >
-            <h5 className="fw-bold text-primary text-uppercase" data-aos="fade-up">Our Services</h5>
-            <h1 className="mb-0" data-aos="fade-up" data-aos-delay="150">Custom IT Solutions for Your Successful Business</h1>
+            <h5 className="fw-bold text-primary text-uppercase">Our Services</h5>
+            <h1 className="mb-0">Custom IT Solutions for Your Successful Business</h1>
           </motion.div>
           <div className="row g-4">
-            <div className="col-lg-4 col-md-6" data-aos="fade-up">
+            <div className="col-lg-4 col-md-6">
               <div className="bg-light rounded p-4 h-100">
                 <div className="d-flex align-items-center mb-3">
                   <div className="bg-primary rounded d-flex align-items-center justify-content-center" style={{ width: 60, height: 60 }}>
@@ -337,7 +335,7 @@ export default function Home() {
                 <p className="mb-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed.</p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div className="col-lg-4 col-md-6">
               <div className="bg-light rounded p-4 h-100">
                 <div className="d-flex align-items-center mb-3">
                   <div className="bg-primary rounded d-flex align-items-center justify-content-center" style={{ width: 60, height: 60 }}>
@@ -348,7 +346,7 @@ export default function Home() {
                 <p className="mb-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed.</p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div className="col-lg-4 col-md-6">
               <div className="bg-light rounded p-4 h-100">
                 <div className="d-flex align-items-center mb-3">
                   <div className="bg-primary rounded d-flex align-items-center justify-content-center" style={{ width: 60, height: 60 }}>
@@ -493,7 +491,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <VendorCarouselInit />
     </main>
   );
 }

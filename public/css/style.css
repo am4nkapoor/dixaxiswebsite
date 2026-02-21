@@ -387,36 +387,6 @@ h6,
     box-shadow: 0 0 30px #DDDDDD;
 }
 
-/* Ensure carousels never hide content before JS init */
-.testimonial-carousel,
-.vendor-carousel {
-    display: block !important;
-}
-.testimonial-carousel .testimonial-item,
-.vendor-carousel img {
-    vertical-align: middle;
-}
-
-/* Always show nav and dots for testimonials, even with a single page */
-.testimonial-carousel .owl-nav.disabled {
-    display: block !important;
-}
-.testimonial-carousel .owl-dots.disabled {
-    display: flex !important;
-}
-.testimonial-carousel .owl-nav {
-    margin-top: 10px;
-    text-align: center;
-}
-.testimonial-carousel .owl-nav .owl-prev,
-.testimonial-carousel .owl-nav .owl-next {
-    color: #fff;
-    background: #0d6efd;
-    border-radius: 3px;
-    padding: 4px 10px;
-    margin: 0 5px;
-}
-
 
 /*** Team ***/
 .team-item {

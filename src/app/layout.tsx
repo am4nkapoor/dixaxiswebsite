@@ -5,8 +5,6 @@ import Topbar from "./_components/Topbar";
 import Navbar from "./_components/Navbar";
 import Footer from "./_components/Footer";
 import Script from "next/script";
-import AOSInit from "./_components/AOSInit";
-import VendorCarouselInit from "./_components/VendorCarouselInit";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,11 +39,9 @@ export default function RootLayout({
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
         <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
-        <link href="/lib/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet" />
         <link href="/lib/animate/animate.min.css" rel="stylesheet" />
         <link href="/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/css/style.css" rel="stylesheet" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <div id="spinner" className="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -82,8 +78,6 @@ export default function RootLayout({
         <Script src="/lib/counterup/counterup.min.js" strategy="afterInteractive" />
         <Script src="/lib/owlcarousel/owl.carousel.min.js" strategy="afterInteractive" />
         <Script src="/js/main.js" strategy="afterInteractive" />
-        <AOSInit />
-        <VendorCarouselInit />
       </body>
     </html>
   );
