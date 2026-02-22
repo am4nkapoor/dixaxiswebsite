@@ -350,6 +350,57 @@ h6,
 
 
 /*** Testimonial ***/
+.testimonial-carousel {
+    position: relative;
+}
+
+.testimonial-carousel .owl-nav {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    pointer-events: auto;
+    width: 45px;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary) !important;
+    color: #fff !important;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: 0.3s;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: #0a3d5c !important;
+    color: #fff !important;
+    transform: scale(1.05);
+}
+
+.testimonial-carousel .owl-nav .owl-prev {
+    margin-left: 10px;
+}
+
+.testimonial-carousel .owl-nav .owl-next {
+    margin-right: 10px;
+}
+
 .testimonial-carousel .owl-dots {
     margin-top: 15px;
     display: flex;

@@ -74,47 +74,8 @@
     });
 
 
-    // Testimonials carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1500,
-        dots: false,
-        nav: true,
-        navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
-        loop: true,
-        center: true,
-        responsive: {
-            0:{ items:1 },
-            576:{ items:1 },
-            768:{ items:2 },
-            992:{ items:3 }
-        }
-    });
+    // Testimonial and vendor carousels are initialized by CarouselInitializer
+    // when their pages mount (so they work after client-side navigation).
 
-
-    // Vendor carousel
-    $('.vendor-carousel').owlCarousel({
-        loop: true,
-        margin: 45,
-        dots: false,
-        loop: true,
-        autoplay: true,
-        smartSpeed: 1000,
-        responsive: {
-            0:{
-                items:2
-            },
-            576:{
-                items:4
-            },
-            768:{
-                items:6
-            },
-            992:{
-                items:8
-            }
-        }
-    });
-    
 })(jQuery);
 
