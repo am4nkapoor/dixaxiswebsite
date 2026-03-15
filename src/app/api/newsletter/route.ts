@@ -1,12 +1,19 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const TO_EMAIL = "info@divaxis.com";
 const FROM_EMAIL = process.env.RESEND_FROM_EMAIL || "DivAxis Website <onboarding@resend.dev>";
 
 export async function POST(request: Request) {
   try {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      return NextResponse.json(
+        { error: "Newsletter signup is not configured" },
+        { status: 500 }
+      );
+    }
+
     const body = await request.json();
     const email = (body.email || "").trim();
 
@@ -17,14 +24,7 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!process.env.RESEND_API_KEY) {
-      console.error("RESEND_API_KEY is not set");
-      return NextResponse.json(
-        { error: "Newsletter signup is not configured" },
-        { status: 500 }
-      );
-    }
-
+    const resend = new Resend(apiKey);
     const safeEmail = escapeHtml(email);
 
     const { data, error } = await resend.emails.send({
