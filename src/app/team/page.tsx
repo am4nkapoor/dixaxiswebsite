@@ -8,10 +8,10 @@ export default function Team() {
     <>
       <div className="container-fluid position-relative p-0">
         <PageHeader
-          title="Team Members"
+          title="Our Leadership"
           breadcrumb={[
             { label: "Home", href: "/" },
-            { label: "Team Members", href: "/team" },
+            { label: "Our Leadership", href: "/team" },
           ]}
         />
       </div>

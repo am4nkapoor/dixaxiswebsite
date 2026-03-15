@@ -101,7 +101,7 @@ export default function QuoteForm() {
             name="message"
             className="form-control bg-light border-0"
             rows={3}
-            placeholder={service === "others" ? "Please describe your requirement (required for Others)" : "Message"}
+            placeholder={service === "others" ? "Please describe your requirement" : "Message"}
             required={service === "others"}
           />
         </div>

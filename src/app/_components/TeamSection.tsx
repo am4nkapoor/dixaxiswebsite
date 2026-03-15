@@ -13,8 +13,8 @@ export default function TeamSection() {
       `}} />
       <div className="container py-5">
         <div className="section-title text-center position-relative pb-3 mb-5 mx-auto" style={{ maxWidth: 600 }}>
-          <h5 className="fw-bold text-primary text-uppercase">Team Members</h5>
-          <h1 className="mb-0">Professional Stuffs Ready to Help Your Business</h1>
+          <h5 className="fw-bold text-primary text-uppercase">Our Leadership</h5>
+          <h1 className="mb-0">Meet the People Behind DivAxis</h1>
         </div>
         <div className="row g-5">
           {TEAM_MEMBERS.map((member, i) => (

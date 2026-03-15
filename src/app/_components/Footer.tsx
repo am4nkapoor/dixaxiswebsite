@@ -59,7 +59,7 @@ export default function Footer() {
                     <Link className="text-light mb-2 text-decoration-none" href="/"><i className="bi bi-arrow-right text-primary me-2"></i>Home</Link>
                     <Link className="text-light mb-2 text-decoration-none" href="/about"><i className="bi bi-arrow-right text-primary me-2"></i>About Us</Link>
                     <Link className="text-light mb-2 text-decoration-none" href="/service"><i className="bi bi-arrow-right text-primary me-2"></i>Our Services</Link>
-                    <Link className="text-light mb-2 text-decoration-none" href="/team"><i className="bi bi-arrow-right text-primary me-2"></i>Meet The Team</Link>
+                    <Link className="text-light mb-2 text-decoration-none" href="/team"><i className="bi bi-arrow-right text-primary me-2"></i>Our Leadership</Link>
                     <Link className="text-light mb-2 text-decoration-none" href="/testimonial"><i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog</Link>
                     <Link className="text-light text-decoration-none" href="/contact"><i className="bi bi-arrow-right text-primary me-2"></i>Contact Us</Link>
                   </div>
@@ -72,7 +72,7 @@ export default function Footer() {
                     <Link className="text-light mb-2 text-decoration-none" href="/"><i className="bi bi-arrow-right text-primary me-2"></i>Home</Link>
                     <Link className="text-light mb-2 text-decoration-none" href="/about"><i className="bi bi-arrow-right text-primary me-2"></i>About Us</Link>
                     <Link className="text-light mb-2 text-decoration-none" href="/service"><i className="bi bi-arrow-right text-primary me-2"></i>Our Services</Link>
-                    <Link className="text-light mb-2 text-decoration-none" href="/team"><i className="bi bi-arrow-right text-primary me-2"></i>Meet The Team</Link>
+                    <Link className="text-light mb-2 text-decoration-none" href="/team"><i className="bi bi-arrow-right text-primary me-2"></i>Our Leadership</Link>
                     <Link className="text-light mb-2 text-decoration-none" href="/testimonial"><i className="bi bi-arrow-right text-primary me-2"></i>Latest Blog</Link>
                     <Link className="text-light text-decoration-none" href="/contact"><i className="bi bi-arrow-right text-primary me-2"></i>Contact Us</Link>
                   </div>
