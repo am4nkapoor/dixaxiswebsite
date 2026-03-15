@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterSignup from "./NewsletterSignup";
 
 export default function Footer() {
   return (
@@ -22,12 +23,7 @@ export default function Footer() {
                   </h1>
                 </Link>
                 <p className="mt-3 mb-4">DivAxis is an IT software company delivering custom software, web and mobile solutions, and digital transformation for businesses worldwide. Partner with us to build scalable, secure, and innovative technology.</p>
-                <form action="">
-                  <div className="input-group">
-                    <input type="text" className="form-control border-white p-3" placeholder="Your Email" />
-                    <button type="button" className="btn btn-dark">Sign Up</button>
-                  </div>
-                </form>
+                <NewsletterSignup />
               </div>
             </div>
             <div className="col-lg-8 col-md-6">
@@ -38,7 +34,7 @@ export default function Footer() {
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-geo-alt text-primary me-2"></i>
-                    <p className="mb-0">India</p>
+                    <p className="mb-0">1086B, 4th Floor, Sector 57, Gurugram 122003</p>
                   </div>
                   <div className="d-flex mb-2">
                     <i className="bi bi-envelope-open text-primary me-2"></i>
@@ -91,7 +87,7 @@ export default function Footer() {
           <div className="row justify-content-end">
             <div className="col-lg-8 col-md-6">
               <div className="d-flex align-items-center justify-content-center" style={{ height: 75 }}>
-                <p className="mb-0">&copy; <Link className="text-white border-bottom text-decoration-none" href="/">DivAxis Consultancy</Link>. All Rights Reserved.</p>
+                <p className="mb-0">&copy; 2026 <Link className="text-white border-bottom text-decoration-none" href="/">DivAxis Consultancy</Link>. Made with <span className="text-danger">♥</span> love. All Rights Reserved.</p>
               </div>
             </div>
           </div>

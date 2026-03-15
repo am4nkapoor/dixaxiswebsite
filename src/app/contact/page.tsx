@@ -1,3 +1,4 @@
+import ContactForm from "../_components/ContactForm";
 import PageHeader from "../_components/PageHeader";
 
 export default function Contact() {
@@ -50,7 +51,7 @@ export default function Contact() {
                 </div>
                 <div className="ps-4">
                   <h5 className="mb-2">Visit our office</h5>
-                  <h4 className="text-primary mb-0">India</h4>
+                  <h4 className="text-primary mb-0">1086B, 4th Floor, Sector 57, Gurugram 122003</h4>
                 </div>
               </div>
             </div>
@@ -58,30 +59,12 @@ export default function Contact() {
           <div className="row g-5">
             <div className="col-lg-6 wow slideInUp" data-wow-delay="0.3s">
               <h4 className="mb-4">Get in touch with us. Send your message and we will respond as soon as possible.</h4>
-              <form>
-                <div className="row g-3">
-                  <div className="col-md-6">
-                    <input type="text" className="form-control border-0 bg-light px-4" placeholder="Your Name" style={{ height: 55 }} />
-                  </div>
-                  <div className="col-md-6">
-                    <input type="email" className="form-control border-0 bg-light px-4" placeholder="Your Email" style={{ height: 55 }} />
-                  </div>
-                  <div className="col-12">
-                    <input type="text" className="form-control border-0 bg-light px-4" placeholder="Subject" style={{ height: 55 }} />
-                  </div>
-                  <div className="col-12">
-                    <textarea className="form-control border-0 bg-light px-4 py-3" rows={4} placeholder="Message"></textarea>
-                  </div>
-                  <div className="col-12">
-                    <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                  </div>
-                </div>
-              </form>
+              <ContactForm />
             </div>
             <div className="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
               <iframe
                 className="position-relative rounded w-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.0!2d77.071!3d28.4516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1b5b3b2b2b2b%3A0x0!2zMjjCsDI3JzA2IiBOIDc3wrAwNCcxNiIiRQ!5e0!3m2!1sen!2sin!4v1603794290143!5m2!1sen!2sin"
                 frameBorder={0}
                 style={{ minHeight: 350, border: 0 }}
                 allowFullScreen

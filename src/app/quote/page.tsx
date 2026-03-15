@@ -1,5 +1,7 @@
-import PageHeader from "../_components/PageHeader";
 import CarouselInitializer from "../_components/CarouselInitializer";
+import ClientLogosCarousel from "../_components/ClientLogosCarousel";
+import PageHeader from "../_components/PageHeader";
+import QuoteForm from "../_components/QuoteForm";
 
 export default function Quote() {
   return (
@@ -44,54 +46,14 @@ export default function Quote() {
             </div>
             <div className="col-lg-5">
               <div className="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                <form>
-                  <div className="row g-3">
-                    <div className="col-xl-12">
-                      <input type="text" className="form-control bg-light border-0" placeholder="Your Name" style={{ height: 55 }} />
-                    </div>
-                    <div className="col-12">
-                      <input type="email" className="form-control bg-light border-0" placeholder="Your Email" style={{ height: 55 }} />
-                    </div>
-                    <div className="col-12">
-                      <select className="form-select bg-light border-0" style={{ height: 55 }} defaultValue="">
-                        <option value="">Select A Service</option>
-                        <option value="1">Service 1</option>
-                        <option value="2">Service 2</option>
-                        <option value="3">Service 3</option>
-                      </select>
-                    </div>
-                    <div className="col-12">
-                      <textarea className="form-control bg-light border-0" rows={3} placeholder="Message"></textarea>
-                    </div>
-                    <div className="col-12">
-                      <button className="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
-                    </div>
-                  </div>
-                </form>
+              <QuoteForm />
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Vendor Start */}
-      <div className="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div className="container py-5 mb-5">
-          <div className="bg-white">
-            <div className="owl-carousel vendor-carousel">
-              <img src="/img/vendor-1.jpg" alt="" />
-              <img src="/img/vendor-2.jpg" alt="" />
-              <img src="/img/vendor-3.jpg" alt="" />
-              <img src="/img/vendor-4.jpg" alt="" />
-              <img src="/img/vendor-5.jpg" alt="" />
-              <img src="/img/vendor-6.jpg" alt="" />
-              <img src="/img/vendor-7.jpg" alt="" />
-              <img src="/img/vendor-8.jpg" alt="" />
-              <img src="/img/vendor-9.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <ClientLogosCarousel />
       <CarouselInitializer />
     </>
   );

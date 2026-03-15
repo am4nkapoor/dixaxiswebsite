@@ -7,7 +7,7 @@ export default function Topbar() {
         <div className="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
           <div className="d-inline-flex align-items-center" style={{ height: 45 }}>
             <small className="me-3 text-light">
-              <i className="fa fa-map-marker-alt me-2"></i>India
+              <i className="fa fa-map-marker-alt me-2"></i>1086B, 4th Floor, Sector 57, Gurugram 122003
             </small>
             <small className="me-3 text-light">
               <i className="fa fa-phone-alt me-2"></i>+91 8929450470
