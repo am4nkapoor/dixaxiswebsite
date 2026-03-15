@@ -1,6 +1,7 @@
 import Link from "next/link";
 import CarouselInitializer from "./_components/CarouselInitializer";
 import ClientLogosCarousel from "./_components/ClientLogosCarousel";
+import CounterUp from "./_components/CounterUp";
 import QuoteForm from "./_components/QuoteForm";
 import TeamSection from "./_components/TeamSection";
 import TestimonialSection from "./_components/TestimonialSection";
@@ -57,7 +58,7 @@ export default function Home() {
                 </div>
                 <div className="ps-4">
                   <h5 className="text-white mb-0">Happy Clients</h5>
-                  <h1 className="text-white mb-0" data-toggle="counter-up">123+</h1>
+                  <h1 className="text-white mb-0"><CounterUp to={123} suffix="+" className="text-white" /></h1>
                 </div>
               </div>
             </div>
@@ -68,7 +69,7 @@ export default function Home() {
                 </div>
                 <div className="ps-4">
                   <h5 className="text-primary mb-0">Projects Done</h5>
-                  <h1 className="mb-0" data-toggle="counter-up">100+</h1>
+                  <h1 className="mb-0"><CounterUp to={100} suffix="+" /></h1>
                 </div>
               </div>
             </div>
@@ -79,7 +80,7 @@ export default function Home() {
                 </div>
                 <div className="ps-4">
                   <h5 className="text-white mb-0">Win Awards</h5>
-                  <h1 className="text-white mb-0" data-toggle="counter-up">12+</h1>
+                  <h1 className="text-white mb-0"><CounterUp to={12} suffix="+" className="text-white" /></h1>
                 </div>
               </div>
             </div>
