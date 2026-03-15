@@ -3,7 +3,7 @@ const CLIENT_LOGOS = [
   { name: "Max Life Insurance", logo: "/img/clients/maxlife.svg" },
   { name: "Samsung", logo: "/img/clients/samsung.png" },
   { name: "USA Today", logo: "/img/clients/usatoday.png" },
-  { name: "Citi", logo: "/img/clients/citi.svg" },
+  { name: "Citi", logo: "/img/clients/Citi.svg" },
 ];
 
 export default function ClientLogosCarousel() {

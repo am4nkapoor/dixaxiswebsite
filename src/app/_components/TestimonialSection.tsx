@@ -37,7 +37,7 @@ export default function TestimonialSection() {
       <div className="container py-5">
         <div className="section-title text-center position-relative pb-3 mb-4 mx-auto" style={{ maxWidth: 600 }}>
           <h5 className="fw-bold text-primary text-uppercase">Testimonial</h5>
-          <h1 className="mb-0">What Our Clients Say About Our Digital Services</h1>
+          <h1 className="mb-0">What Our Clients Say About Our Services</h1>
         </div>
         <div className="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
           {testimonials.map((item, i) => (

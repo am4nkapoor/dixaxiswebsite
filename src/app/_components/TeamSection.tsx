@@ -1,7 +1,7 @@
 const TEAM_MEMBERS = [
   { name: "Aman Kapoor", designation: "Co-Founder", image: "/img/team-1.jpg" },
   { name: "Amit Kumar", designation: "Managing Director", image: "/img/team-2.jpg" },
-  { name: "Nitin Singh", designation: "Full Stack Developer", image: "/img/team-3.jpg" },
+  { name: "Nitin Singh", designation: "Chief Technology Officer", image: "/img/team-3.jpg" },
 ];
 
 export default function TeamSection() {

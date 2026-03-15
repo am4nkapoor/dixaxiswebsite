@@ -13,10 +13,8 @@ export default function PageHeader({ title, breadcrumb }: PageHeaderProps) {
           <h1 className="display-4 text-white animated zoomIn">{title}</h1>
           {breadcrumb.map((item, i) => (
             <span key={item.href}>
-              {i > 0 && <i className="far fa-circle text-white px-2"></i>}
-              <Link href={item.href} className="h5 text-white text-decoration-none">
-                {item.label}
-              </Link>
+              {i > 0 && <i className="fa text-white px-2"></i>}
+           
             </span>
           ))}
         </div>

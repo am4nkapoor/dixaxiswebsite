@@ -29,11 +29,8 @@ export default function Quote() {
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                   <h5 className="mb-4"><i className="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
                 </div>
-                <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                  <h5 className="mb-4"><i className="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
-                </div>
               </div>
-              <p className="mb-4">Tell us about your project—whether you need a new application, integration, or support. Our team will review your request and get back with a tailored quote. We work across web, mobile, cloud, and enterprise software to deliver solutions that fit your goals and timeline.</p>
+              <p className="mb-4">Tell us about your requirements. Our team will review your request and get back to you with a tailored quote. We work across web, mobile, cloud, and enterprise software to deliver scalable solutions that fit your goals and budget.</p>
               <div className="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
                 <div className="bg-primary d-flex align-items-center justify-content-center rounded" style={{ width: 60, height: 60 }}>
                   <i className="fa fa-phone-alt text-white"></i>

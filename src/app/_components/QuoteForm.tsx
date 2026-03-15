@@ -6,6 +6,7 @@ export default function QuoteForm() {
   const formRef = useRef<HTMLFormElement>(null);
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [service, setService] = useState("");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -16,11 +17,20 @@ export default function QuoteForm() {
     setErrorMessage("");
 
     const formData = new FormData(form);
+    const selectedService = (formData.get("service") as string) || "";
+    const message = (formData.get("message") as string) || "";
+
+    if (selectedService === "others" && !message.trim()) {
+      setStatus("error");
+      setErrorMessage("Please describe your requirement in the Message field when selecting Others.");
+      return;
+    }
+
     const payload = {
       name: (formData.get("name") as string) || "",
       email: (formData.get("email") as string) || "",
-      service: (formData.get("service") as string) || "",
-      message: (formData.get("message") as string) || "",
+      service: selectedService,
+      message,
     };
 
     try {
@@ -39,6 +49,7 @@ export default function QuoteForm() {
 
       setStatus("success");
       form.reset();
+      setService("");
     } catch {
       setStatus("error");
       setErrorMessage("Network error. Please try again.");
@@ -73,7 +84,8 @@ export default function QuoteForm() {
             name="service"
             className="form-select bg-light border-0"
             style={{ height: 55 }}
-            defaultValue=""
+            value={service}
+            onChange={(e) => setService(e.target.value)}
           >
             <option value="">Select A Service</option>
             <option value="cyber-security">Cyber Security</option>
@@ -81,6 +93,7 @@ export default function QuoteForm() {
             <option value="web-development">Web Development</option>
             <option value="apps-development">Apps Development</option>
             <option value="seo-optimization">SEO Optimization</option>
+            <option value="others">Others</option>
           </select>
         </div>
         <div className="col-12">
@@ -88,7 +101,8 @@ export default function QuoteForm() {
             name="message"
             className="form-control bg-light border-0"
             rows={3}
-            placeholder="Message"
+            placeholder={service === "others" ? "Please describe your requirement (required for Others)" : "Message"}
+            required={service === "others"}
           />
         </div>
         {status === "success" && (

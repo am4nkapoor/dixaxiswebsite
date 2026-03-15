@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
                 <div className="ps-4">
                   <h5 className="text-white mb-0">Happy Clients</h5>
-                  <h1 className="text-white mb-0"><CounterUp to={123} suffix="+" className="text-white" /></h1>
+                  <h1 className="text-white mb-0"><CounterUp to={60} suffix="+" className="text-white" /></h1>
                 </div>
               </div>
             </div>
@@ -139,17 +139,21 @@ export default function Home() {
             <div className="col-lg-4">
               <div className="row g-5">
                 <div className="col-12 wow zoomIn" data-wow-delay="0.2s">
-                  <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: 60, height: 60 }}>
-                    <i className="fa fa-cubes text-white"></i>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary rounded d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: 60, height: 60 }}>
+                      <i className="fa fa-cubes text-white"></i>
+                    </div>
+                    <h4 className="mb-0 ms-3">Best In Industry</h4>
                   </div>
-                  <h4>Best In Industry</h4>
                   <p className="mb-0">Enterprise-grade software and cloud solutions built for reliability and scale.</p>
                 </div>
                 <div className="col-12 wow zoomIn" data-wow-delay="0.6s">
-                  <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: 60, height: 60 }}>
-                    <i className="fa fa-award text-white"></i>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary rounded d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: 60, height: 60 }}>
+                      <i className="fa fa-award text-white"></i>
+                    </div>
+                    <h4 className="mb-0 ms-3">Award Winning</h4>
                   </div>
-                  <h4>Award Winning</h4>
                   <p className="mb-0">Quality-driven delivery and industry recognition for excellence in software and support.</p>
                 </div>
               </div>
@@ -162,17 +166,21 @@ export default function Home() {
             <div className="col-lg-4">
               <div className="row g-5">
                 <div className="col-12 wow zoomIn" data-wow-delay="0.4s">
-                  <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: 60, height: 60 }}>
-                    <i className="fa fa-users-cog text-white"></i>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary rounded d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: 60, height: 60 }}>
+                      <i className="fa fa-users-cog text-white"></i>
+                    </div>
+                    <h4 className="mb-0 ms-3">Professional Staff</h4>
                   </div>
-                  <h4>Professional Staff</h4>
                   <p className="mb-0">Skilled engineers and consultants who bring best practices and clean, maintainable code.</p>
                 </div>
                 <div className="col-12 wow zoomIn" data-wow-delay="0.8s">
-                  <div className="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style={{ width: 60, height: 60 }}>
-                    <i className="fa fa-phone-alt text-white"></i>
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary rounded d-flex align-items-center justify-content-center flex-shrink-0" style={{ width: 60, height: 60 }}>
+                      <i className="fa fa-phone-alt text-white"></i>
+                    </div>
+                    <h4 className="mb-0 ms-3">24/7 Support</h4>
                   </div>
-                  <h4>24/7 Support</h4>
                   <p className="mb-0">Round-the-clock technical support and maintenance so your systems stay running.</p>
                 </div>
               </div>
@@ -273,11 +281,9 @@ export default function Home() {
                 <div className="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                   <h5 className="mb-4"><i className="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
                 </div>
-                <div className="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                  <h5 className="mb-4"><i className="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
-                </div>
+       
               </div>
-              <p className="mb-4">Tell us about your project—whether you need a new application, integration, or support. Our team will review your request and get back with a tailored quote. We work across web, mobile, cloud, and enterprise software to deliver solutions that fit your goals and timeline.</p>
+              <p className="mb-4">Tell us about your requirements. Our team will review your request and get back to you with a tailored quote. We work across web, mobile, cloud, and enterprise software to deliver scalable solutions that fit your goals and budget.</p>
               <div className="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
                 <div className="bg-primary d-flex align-items-center justify-content-center rounded" style={{ width: 60, height: 60 }}>
                   <i className="fa fa-phone-alt text-white"></i>
